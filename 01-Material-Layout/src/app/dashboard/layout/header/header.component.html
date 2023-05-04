@@ -1,0 +1,85 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <span>Responsive Navigation</span>
+    <span class="spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'home'"> Home </a>
+      <a mat-button [routerLink]="'tutorial'"> Tutorial </a>
+      <a mat-button [routerLink]="'pages'"> Pages </a>
+      <a mat-button [routerLink]="'forms'"> Forms </a>
+      <a mat-button [routerLink]="'aboutus'"> About Us </a>
+      <a mat-button  [matMenuTriggerFor]="menuSchematics"> Schematics </a>
+
+      <mat-menu #menuSchematics="matMenu">
+        <button mat-menu-item [routerLink]="'schematics/dashboard'">
+          <mat-icon>account_box</mat-icon>
+          <span>Dashboard</span>
+        </button>
+        <button mat-menu-item [routerLink]="'schematics/address-form'">
+          <mat-icon>Address-Form</mat-icon>
+          <span>Address-Form</span>
+        </button>
+        <button mat-menu-item [routerLink]="'schematics/table'">
+          <mat-icon>how_to_reg</mat-icon> Table
+        </button>
+        <button mat-menu-item [routerLink]="'schematics/tree'">
+          <mat-icon>settings</mat-icon>
+          <span>Tree</span>
+        </button>
+        <button mat-menu-item [routerLink]="'schematics/drag-drop'">
+          <mat-icon>Drag-Drop</mat-icon> Drag-Drop
+        </button> 
+      </mat-menu> 
+
+    </div>
+
+    <div class="spacer"></div>
+
+      <!-- <ng-container autorizado>
+        <span>Hola, {{seguridadService.obtenerCampoJWT('email')}}</span>
+        <a mat-button (click)="seguridadService.logout()">Logout</a>
+      </ng-container> -->
+      <ng-container Autorizado>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>person</mat-icon>
+        </button>
+        <!-- <button mat-button class="menu-button" routerLink="/profile">
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </button> -->
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="onSelectOption('19')">
+            <mat-icon>account_box</mat-icon>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item (click)="onSelectOption('1')">
+            <mat-icon>Login</mat-icon>
+            <span>Login</span>
+          </button>
+          <button mat-menu-item (click)="onSelectOption('6')">
+            <mat-icon>exit_to_app</mat-icon> Sign Out
+          </button>          
+          <button mat-menu-item (click)="onSelectOption('2')">
+            <mat-icon>how_to_reg</mat-icon> Register
+          </button>
+          <button mat-menu-item (click)="onSelectOption('3')">
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <button mat-menu-item (click)="onSelectOption('3')">
+              <mat-icon>help</mat-icon>
+              <span>Help</span>
+            </button>        
+        </mat-menu>          
+      </ng-container>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

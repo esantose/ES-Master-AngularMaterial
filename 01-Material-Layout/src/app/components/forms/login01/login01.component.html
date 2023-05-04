@@ -1,0 +1,59 @@
+<div class="form-wraper">
+   <div class="form-container">
+      <form class="form" [formGroup]="frmLogin">
+         <mat-card>
+      
+            <mat-card-header>
+               <mat-card-title>Login</mat-card-title>
+             </mat-card-header>
+             <div class="additional-link">
+               <p>Don't have an account?
+                  <a routerLink="/register">Sign up</a>
+               </p>
+             </div>  
+   
+             <div class="form-header">
+               <img src=" ./../../assets/car-key.svg"  class="main-lock-icon" alt="">
+             </div>
+      
+             <mat-card-content>
+               <mat-form-field class="form-element">
+                  <mat-icon matPrefix color="primary"><i class="fa fa-user"></i></mat-icon>
+                  <mat-label>Username</mat-label>
+                  <input matInput placeholder="Enter your username" formControlName="username" required>
+                </mat-form-field>
+                   
+                <mat-form-field class="form-element">
+                  <mat-icon matPrefix><i class="fa fa-lock"></i></mat-icon>
+                  <mat-icon matSuffix>visibility_off</mat-icon>
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" placeholder="Enter your password" required>
+                 </mat-form-field>
+      
+             </mat-card-content>
+   
+            <!-- REGISTER BUTTON -->
+            <mat-card-actions>
+               <button class="full-width" mat-raised-button (click)="toggleForgetPassword()" color="primary">Sign in</button>
+            </mat-card-actions>
+         </mat-card>
+   
+          <div class="row">
+             <!-- Remember me -->
+             <div class="form-check">
+               <input type="checkbox" class="form-check-input">
+               <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+             </div>
+             <div class="col forgot-password">
+              <!-- Forgot password -->
+              <a href="">Forgot password?</a>
+            </div>
+
+          </div>   
+  
+      </form>
+   </div>
+
+</div>
+
+

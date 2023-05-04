@@ -1,0 +1,60 @@
+  /** form **/
+  .form-wraper{
+    width: 100%;
+    margin-top: 3%;
+
+    .form-container{
+      width: 35%;
+      margin: auto;
+      padding-bottom: 24px !important;
+      display: block;
+      background: rgb(253, 253, 253);
+
+    }
+  }
+
+  .form {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+  
+    .form-element {
+      width: 100%;
+      i {
+        // font-size: 20px;
+        // -webkit-margin-top-collapse: 10px;;
+        color: #737373;
+      }
+    }
+  
+  }
+  
+ 
+  .full-width {
+    width: 100%;
+  }
+
+  .forgot-password {
+    cursor: pointer;
+    //text-align: end;
+    //text-align: right;
+    text-align-last: right;
+    }
+
+  .additional-link{
+    padding: 10px auto;
+    text-align: center;
+}
+
+  .main-lock-icon{
+    width: 20%;
+    margin: 5px auto;
+    display: block;
+}
+
+
+
+
+  
+  
+  

@@ -1,0 +1,30 @@
+mat-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+app-autorizado{
+  display: flex;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button.mat-raised-button {
+  border-radius: 0;
+}
+.searchbar {
+  width: 99%;
+  margin: 5px;
+  height: 30px;
+  border-radius: 23px;
+}
+
+.content {
+  margin: 5px;
+  padding: 10px;
+  overflow: auto;
+}
