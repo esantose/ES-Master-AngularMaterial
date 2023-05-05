@@ -6,7 +6,7 @@ import { AboutUsComponent } from '../components/about-us/about-us.component';
 import { BookComponent } from '../components/tutorial/book/book.component';
 import { PageLayoutComponent } from '../components/pages/page-layout/page-layout.component';
 import { FormLayoutComponent } from '../components/forms/form-layout/form-layout.component';
-import { NavigationComponent } from '../components/schematics/navigation/navigation.component';
+import { NavigationComponent } from '../components/schematics/schematic-layout/schematic-layout.component';
 
 const routes1: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },

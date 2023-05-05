@@ -7,7 +7,7 @@ import { SchematicsRoutingModule } from './schematics-routing.module';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HomeComponent } from './home/home.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { SchematicLayoutComponent } from './schematic-layout/schematic-layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TableComponent } from './table/table.component';
 import { TreeComponent } from './tree/tree.component';
@@ -17,7 +17,7 @@ import { AddressFormComponent } from './address-form/address-form.component';
 	declarations: [
 		DragDropComponent,
 		HomeComponent,
-		NavigationComponent,
+		SchematicLayoutComponent,
 		DashboardComponent,
 		TableComponent,
 		TreeComponent,

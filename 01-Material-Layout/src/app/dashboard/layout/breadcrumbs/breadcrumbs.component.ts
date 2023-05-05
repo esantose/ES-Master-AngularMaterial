@@ -8,7 +8,7 @@ import { Observable, Subscription } from 'rxjs';
 	templateUrl: './breadcrumbs.component.html',
 	styleUrls: ['./breadcrumbs.component.scss'],
 })
-export class BreadcrumbsComponent {
+export class BreadcrumbsComponent implements OnDestroy {
 	titulo: string = '*****';
 	tituloSubs$: Subscription;
 
@@ -30,6 +30,12 @@ export class BreadcrumbsComponent {
 				this.titulo = titulo;
 				document.title = `AdminPro - ${titulo}`;
 			});
+
+		// ==== It work too but it can be destructurar ---
+		// .subscribe(data) => {
+		// 	console.log(data);
+		// 	this.titulo = data.titulo;
+		// })
 	}
 
 	ngOnDestroy(): void {

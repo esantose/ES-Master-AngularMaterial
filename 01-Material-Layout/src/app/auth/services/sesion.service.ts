@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// import { IUser } from '@root/models/user';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Sesion } from 'src/app/models/sesion';
 

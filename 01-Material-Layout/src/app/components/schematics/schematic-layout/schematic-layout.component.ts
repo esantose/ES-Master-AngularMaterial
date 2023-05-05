@@ -6,10 +6,10 @@ import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-navigation',
-	templateUrl: './navigation.component.html',
-	styleUrls: ['./navigation.component.scss'],
+	templateUrl: './schematic-layout.component.html',
+	styleUrls: ['./schematic-layout.component.scss'],
 })
-export class NavigationComponent {
+export class SchematicLayoutComponent {
 	isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
 		map(result => result.matches),
 		shareReplay()
