@@ -9,9 +9,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, NopagefoundComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,

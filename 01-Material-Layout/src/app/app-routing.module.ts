@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Modulos
 import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 import { AuthRoutingModule } from './auth/authRouting.module';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 const routes: Routes = [
 	{
@@ -15,7 +16,7 @@ const routes: Routes = [
 		loadChildren: () =>
 			import('./dashboard/dashboard.module').then(modulo => modulo.DashboardModule),
 	},
-	// { path: '**', component: DashboardComponent },
+	{ path: '**', component: NopagefoundComponent },
 ];
 
 @NgModule({
